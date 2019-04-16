@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Fanfou Translate</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                font-family: "Microsoft YaHei", arial, sans-serif;
+                font-size: 14px;
+                color: black;
+                min-width: 200px;
+                overflow-x: hidden;
+                background-image: url("skin.jpg");
+            }
+
+            img {
+                margin: 5px;
+                vertical-align: middle;
+                width: 82px;
+                height: 22px;
+            }
+
+            input[type="text"] {
+                width: 170px;
+                height: 20px;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-shadow: inset 0 1px 3px #ddd;
+                border-radius: 3px;
+                vertical-align: middle;
+                box-sizing: border-box;
+            }
+
+            input[type="text"]:focus {
+                outline: 0;
+                border-color: #129FEA;
+            }
+
+            input[type="button"] {
+                color: #fff;
+                width: 38px;
+                height: 20px;
+                border: none rgba(0, 0, 0, 0);
+                background-color: #0078E7;
+                text-decoration: none;
+                margin-left: 2px;
+                border-radius: 3px;
+                cursor: pointer;
+                box-sizing: border-box;
+            }
+
+            #header > input[type="text"],
+            #header > input[type="button"] {
+                vertical-align: middle;
+            }
+
+            input[type="checkbox"],
+            input[type="radio"] {
+                box-sizing: border-box;
+                padding: 0;
+                vertical-align: middle;
+            }
+
+            input[type="radio"] {
+                margin: 5px 3px;
+            }
+
+            select {
+                height: 20px;
+                border: 1px solid #ccc;
+                background-color: white;
+                font-size: 13px;
+                vertical-align: middle;
+            }
+
+            #main {
+                width: 220px;
+                margin: 0 auto;
+                word-break: keep-all;
+            }
+
+            #result {
+                margin: 10px 0;
+                word-wrap: break-word;
+                white-space: pre-wrap;
+            }
+
+            #footer {
+                float:right;
+                margin: 5px 0;
+                font-size: 10px;
+            }
+
+            #sweep {
+                margin-left: 0;
+            }
+
+            .opt {
+                margin: 5px 0;
+                font-size: 13px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="header"><img src="logo.png">
+            <input type="text" id="word">
+            <input type="button" id="query" value="查询"></div>
+            <div id="result"></div>
+            <div class="opt"><strong>选项设置:</strong></div>
+            <div class="opt"><input type="checkbox" id="enable" checked>开启划词翻译</div>
+            <div class="opt enable"><input type="checkbox" id="hyphen" checked>开启音节划分</div>
+            <div class="opt enable"><input type="checkbox" id="remind">开启提醒模式</div>
+            <div class="opt enable">翻译来源：<select name="source" id="source">
+                <option value="youdao">有道词典</option>
+                <option value="bing">必应词典</option>
+                <option value="iciba">爱词霸</option>
+            </select></div>
+            <div class="opt enable">翻译模式：
+            <input type="radio" id="sweep" name="mode">划后即译
+            <input type="radio" id="click" name="mode" checked>划后点击</div>
+            <div class="opt enable">SSID：<input type="text" id="ssid" placeholder="your ssid :-)" spellcheck="false"></div>
+            <div id="footer"><a href="#" id="issue">意见反馈</a>&nbsp;<a href="#" id="about">关于</a></div>
+        </div>
+        <script src="options.js"></script>
+    </body>
+</html>

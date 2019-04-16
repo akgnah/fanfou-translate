@@ -1,0 +1,55 @@
+#setq-btn {
+    position: absolute;
+    z-index: 1554735895;
+    cursor: pointer;
+}
+
+#setq-popup {
+    position: absolute;
+    z-index: 1554735913;
+    border: 1px solid #ffecb3;
+    background-color: #fff9f3;
+    border-radius: 6px;
+    padding: 0;
+    font-weight: normal;
+    line-height: 1.15;
+    font-family: "Microsoft YaHei", arial, sans-serif;
+}
+
+.setq-text {
+    color: #181818;
+    margin: 10px 10px;
+    font-size: 14px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    text-indent: 0;
+}
+
+.setq-word {
+    font-weight: bold;
+}
+
+.setq-phonetic {
+    color: #585858;
+    margin-left: 12px;
+    font-family: "lucida sans unicode", "Microsoft YaHei", arial, sans-serif;
+}
+
+#setq-audio {
+    display: none;
+}
+
+#setq-audio-btn {
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.setq-info {
+    color: #b8b8b8;
+}
+
+.setq-word,
+.setq-phonetic,
+#setq-audio-btn {
+    vertical-align: middle;
+}

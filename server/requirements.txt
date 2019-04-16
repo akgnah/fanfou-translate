@@ -1,0 +1,7 @@
+fanfou
+requests
+beautifulsoup4
+lxml
+redis
+flask
+pickledb

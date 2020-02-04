@@ -95,7 +95,7 @@ def iciba(word):
             _word = word
         if _word.lower() != word.lower():
             return None
-        pattern = r'(<div id=\\\"icIBahyI-dict_main\\\">[\s\S]+</div>)'
+        pattern = r'(<div class=\\\"icIBahyI-dictbar\\\">[\s\S]+</div>)'
         text = re.search(pattern, text).group(1).replace('\\"', '"')
         soup = BeautifulSoup(text, 'lxml')
         pho = soup.find('strong', {'lang': 'EN-US'})
